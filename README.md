@@ -59,14 +59,18 @@ Link Demo (Deploy):
 - Git.
 
 ### 2. Cài đặt Backend (Server)
-```bash
+
 # Di chuyển vào thư mục backend
+```bash
 cd backend
-
+```
 # Cài đặt các gói phụ thuộc
+```
 npm install
+```
 
-#Tạo file .env (backend/.env)
+# Tạo file .env (backend/.env)
+```
 PORT=3001
 MONGO_DB=mongodb+srv://thaibao:wC9925TGDouXdWgC@cluster0.zjtg7fy.mongodb.net/test?retryWrites=true&w=majority
 ACCESS_TOKEN=access_token
@@ -74,30 +78,34 @@ REFRESH_TOKEN=refresh_token
 SECURE_SECRET_VNPAY=ISESX55WGLQ6SLOBDBY7CULWK8WQLW6S
 TMN_CODE=EG3CSSD9
 APP_API_URL=https:http://localhost:3000
-
-# Chạy server
-npm run start
-# Server sẽ chạy tại: http://localhost:3001
-
 ```
+# Chạy server
+```
+npm start
+```
+- Server sẽ chạy tại: http://localhost:3001
 
 ### 3. Cài đặt Frontend (Client)
-```bash
 # Di chuyển vào thư mục backend
+```bash
 cd front
-
+```
 # Cài đặt các gói phụ thuộc
+```
 npm install
-
-#Tạo file .env (frontend/.env)
+```
+# Tạo file .env (frontend/.env)
+```
 REACT_APP_API_URL=http://localhost:3001/api
 REACT_APP_CLOUDINARY_CLOUD_NAME=dhohcsfbj
 REACT_APP_CLOUDINARY_PRESET=ml_default
-
-# Chạy server
-npm run start
-# Server sẽ chạy tại: http://localhost:3001
 ```
+# Chạy server
+```
+npm start
+```
+- Server sẽ chạy tại: http://localhost:3000
+
 ### 4. Tài khoản kiểm thử 
 
 
