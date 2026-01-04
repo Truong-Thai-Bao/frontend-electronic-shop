@@ -122,7 +122,7 @@ npm start
 - Mật khẩu OTP:123456
 
 ### Cấu trúc thư mục
-
+```text
 Electric-Shop/
 ├── backend/        
 │   ├── src/
@@ -140,7 +140,7 @@ Electric-Shop/
     │   ├── hook/
     │   └── services/
     └── .env
-
+```
 
 
 
