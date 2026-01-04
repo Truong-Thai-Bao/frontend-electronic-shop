@@ -77,7 +77,7 @@ ACCESS_TOKEN=access_token
 REFRESH_TOKEN=refresh_token
 SECURE_SECRET_VNPAY=ISESX55WGLQ6SLOBDBY7CULWK8WQLW6S
 TMN_CODE=EG3CSSD9
-APP_API_URL=https:http://localhost:3000
+APP_API_URL=http://localhost:3000
 ```
 #### Chạy server
 ```
