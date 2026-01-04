@@ -1,6 +1,5 @@
 import React from 'react'
 import { WrapperAllPrice, WrapperContentInfo, WrapperHeaderUser, WrapperInfoUser, WrapperItem, WrapperItemLabel, WrapperLabel, WrapperNameProduct, WrapperProduct, WrapperStyleContent } from './style'
-// import logo from '../../assets/images/logo.png' // Logo không dùng đến có thể bỏ hoặc giữ
 import { useLocation, useParams } from 'react-router-dom'
 import { useEffect } from 'react'
 import * as OrderService from '../../services/OrderService'
@@ -67,7 +66,6 @@ const DetailsOrderPage = () => {
         </WrapperHeaderUser>
 
         <WrapperStyleContent>
-          {/* Header Bảng Sản Phẩm */}
           <div style={{display: 'flex', alignItems: 'center', justifyContent: 'space-between', paddingBottom: '15px', borderBottom: '1px solid #ccc'}}>
             <div style={{flex: 4, fontWeight: 'bold', fontSize: '15px', color: '#555'}}>Sản phẩm</div>
             <WrapperItemLabel>Giá</WrapperItemLabel>
@@ -75,7 +73,6 @@ const DetailsOrderPage = () => {
             <WrapperItemLabel>Giảm giá</WrapperItemLabel>
           </div>
 
-          {/* Danh sách sản phẩm */}
           {data?.orderItems?.map((order) => {
             return (
               <WrapperProduct key={order?._id}> 
@@ -85,13 +82,13 @@ const DetailsOrderPage = () => {
                       width: '70px', 
                       height: '70px', 
                       objectFit: 'cover',
-                      borderRadius: '6px', // Bo góc ảnh
+                      borderRadius: '6px',
                       border: '1px solid #eee'
                     }}
                     alt="product"
                   />
                   <div style={{
-                    width: '100%', // Để text tự co giãn
+                    width: '100%', 
                     overflow: 'hidden',
                     textOverflow:'ellipsis',
                     whiteSpace:'nowrap',
@@ -99,7 +96,6 @@ const DetailsOrderPage = () => {
                     fontWeight: '500',
                     color: '#333'
                   }} title={order?.name}>Điện thoại</div> 
-                  {/* Lưu ý: Bạn đang hardcode chữ "Điện thoại", nếu muốn hiện tên thật hãy sửa thành {order?.name} */}
                 </WrapperNameProduct>
                 
                 <WrapperItem>{convertPrice(order?.price)}</WrapperItem>
@@ -109,7 +105,6 @@ const DetailsOrderPage = () => {
             )
           })}
           
-          {/* Phần tổng kết giá - Gom lại một góc dưới bên phải */}
           <div style={{borderTop: '1px solid #f0f0f0', marginTop: '20px', paddingTop: '20px'}}>
               <WrapperAllPrice>
                 <div>Tạm tính</div>
