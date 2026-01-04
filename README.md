@@ -114,12 +114,13 @@ npm start
 - Email: test@gmail.com
 - Password : 1
 #### Tài khoản thanh toán qua VNPay 
+##### Lưu ý: Chỉ chọn thanh toán bằng "Thẻ nội địa"
 - Ngân hàng: NCB
 - Số thẻ: 9704198526191432198
 - Tên chủ thẻ:NGUYEN VAN A
 - Ngày phát hành:07/15
 - Mật khẩu OTP:123456
-### Lưu ý: chỉ chọn thanh toán bằng ngân hàng nội địa
+
 
 
 
