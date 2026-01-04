@@ -1,11 +1,11 @@
-# 🛒 Electric Shop - MERN Stack E-commerce
+# 🛒 Electric Shop 
 
 > Website quản lý kho và đơn hàng cho cửa hàng điện tử (Electronics Store).
 
 ## 📖 Giới thiệu
-Electric Shop là một ứng dụng web thương mại điện tử hoàn chỉnh, cho phép người dùng xem, tìm kiếm, lọc sản phẩm và đặt hàng trực tuyến. Hệ thống cung cấp trang quản trị để quản lý sản phẩm, đơn hàng, người dùng và theo dõi doanh thu.
+Electric Shop là một ứng dụng web thương mại điện tử , cho phép người dùng xem, tìm kiếm, lọc sản phẩm và đặt hàng trực tuyến. Hệ thống cung cấp trang quản trị để quản lý sản phẩm, đơn hàng, người dùng và theo dõi doanh thu.
 
-Link Demo (Deploy):
+Link Deploy sản phẩm :
 - **Frontend:** https://frontend-electronic-shop.vercel.app/
 - **Backend:** https://backend-electronic-shop.onrender.com
 
@@ -15,7 +15,7 @@ Link Demo (Deploy):
 
 ### 1. Phía Người Dùng (Client) 
 - **Xác thực:** Đăng ký, Đăng nhập, Đăng xuất, Refresh Token (JWT).
-- **Sản phẩm:** Xem danh sách, Chi tiết sản phẩm, Tìm kiếm thông minh (Debounce), Lọc theo giá và đánh giá (Star/Price Filter).
+- **Sản phẩm:** Xem danh sách, Chi tiết sản phẩm, Tìm kiếm (Debounce), Lọc theo giá và đánh giá (Star/Price Filter).
 - **Giỏ hàng & Đặt hàng:**
   - Thêm sản phẩm vào giỏ.
   - Thanh toán trực tuyến VNPay hoặc Tiền mặt 
@@ -25,8 +25,8 @@ Link Demo (Deploy):
 ### 2. Phía Quản Trị Viên (Admin) 
 - **Dashboard:** Thống kê tổng quan về users, sản phẩm, đơn hàng.
 - **Quản lý Sản phẩm (CRUD):** Thêm, Xóa, Sửa, Cập nhật thông tin, Upload ảnh (tích hợp Cloudinary).
-- **Quản lý Đơn hàng:** Xem danh sách đơn, cập nhật trạng thái vận chuyển/thanh toán.
-- **Quản lý Người dùng:** Xem danh sách, phân quyền hoặc xóa người dùng.
+- **Quản lý Đơn hàng:** Xem danh sách đơn hàng, cập nhật trạng thái vận chuyển/thanh toán.
+- **Quản lý Người dùng:** Xem danh sách, thêm, sửa, xóa thông tin người dùng.
 
 ---
 
@@ -121,7 +121,25 @@ npm start
 - Ngày phát hành:07/15
 - Mật khẩu OTP:123456
 
+### Cấu trúc thư mục
 
+Electric-Shop/
+├── backend/        
+│   ├── src/
+│   │   ├── controllers/
+│   │   ├── models/
+│   │   ├── routes/
+│   │   ├── services/
+│   └── .env
+│
+└── frontend/       
+    ├── src/
+    │   ├── components/
+    │   ├── pages/
+    │   ├── redux/
+    │   ├── hook/
+    │   └── services/
+    └── .env
 
 
 
