@@ -60,16 +60,16 @@ Link Demo (Deploy):
 
 ### 2. Cài đặt Backend (Server)
 
-# Di chuyển vào thư mục backend
+#### Di chuyển vào thư mục backend
 ```bash
 cd backend
 ```
-# Cài đặt các gói phụ thuộc
+#### Cài đặt các gói phụ thuộc
 ```
 npm install
 ```
 
-# Tạo file .env (backend/.env)
+#### Tạo file .env (backend/.env)
 ```
 PORT=3001
 MONGO_DB=mongodb+srv://thaibao:wC9925TGDouXdWgC@cluster0.zjtg7fy.mongodb.net/test?retryWrites=true&w=majority
@@ -79,34 +79,47 @@ SECURE_SECRET_VNPAY=ISESX55WGLQ6SLOBDBY7CULWK8WQLW6S
 TMN_CODE=EG3CSSD9
 APP_API_URL=https:http://localhost:3000
 ```
-# Chạy server
+#### Chạy server
 ```
 npm start
 ```
 - Server sẽ chạy tại: http://localhost:3001
 
 ### 3. Cài đặt Frontend (Client)
-# Di chuyển vào thư mục backend
+#### Di chuyển vào thư mục backend
 ```bash
 cd front
 ```
-# Cài đặt các gói phụ thuộc
+#### Cài đặt các gói phụ thuộc
 ```
 npm install
 ```
-# Tạo file .env (frontend/.env)
+#### Tạo file .env (frontend/.env)
 ```
 REACT_APP_API_URL=http://localhost:3001/api
 REACT_APP_CLOUDINARY_CLOUD_NAME=dhohcsfbj
 REACT_APP_CLOUDINARY_PRESET=ml_default
 ```
-# Chạy server
+#### Chạy server
 ```
 npm start
 ```
 - Server sẽ chạy tại: http://localhost:3000
 
 ### 4. Tài khoản kiểm thử 
+#### Tài khoản Admin
+- Email: admin@gmail.com
+- Password : 123456
+#### Tài khoản User
+- Email: test@gmail.com
+- Password : 1
+#### Tài khoản thanh toán qua VNPay 
+- Ngân hàng: NCB
+- Số thẻ: 9704198526191432198
+- Tên chủ thẻ:NGUYEN VAN A
+- Ngày phát hành:07/15
+- Mật khẩu OTP:123456
+### Lưu ý: chỉ chọn thanh toán bằng ngân hàng nội địa
 
 
 
