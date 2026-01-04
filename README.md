@@ -54,6 +54,7 @@ Link Deploy sản phẩm :
 ## ⚙️ Hướng dẫn Cài đặt & Chạy dự án
 
 ### 1. Yêu cầu môi trường
+- Reactjs 
 - Node.js (v14 trở lên).
 - MongoDB (Cài sẵn hoặc dùng MongoDB Atlas).
 - Git.
